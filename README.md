@@ -1,38 +1,33 @@
-# create-svelte
+## Usage
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+Those templates dependencies are maintained via [pnpm](https://pnpm.js.org/) via `pnpm up -Lri`.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
 
 ```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+$ npm install # or pnpm install or yarn install
 ```
+### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
 
-> Note: the `@next` is temporary
+## Available Scripts
 
-## Developing
+In the project directory, you can run:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### `npm dev` or `npm start`
 
-```bash
-npm run dev
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+The page will reload if you make edits.<br>
 
-## Building
+### `npm run build`
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+Builds the app for production to the `dist` folder.<br>
+It correctly bundles Solid in production mode and optimizes the build for the best performance.
 
-```bash
-npm run build
-```
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+## Deployment
+
+You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
