@@ -1,0 +1,10 @@
+.input {
+	@apply border w-full p-3 border-blue-800 rounded-xl border-2;
+}
+.jarak {
+	@apply p-3 bg-blue-300 h-screen;
+}
+.tombol {
+	@apply bg-orange-300 px-5 py-2 rounded user-select-none cursor-pointer;
+	box-shadow: 5px 5px 0 0 black;
+}

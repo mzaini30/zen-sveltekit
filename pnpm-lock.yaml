@@ -1,8 +1,10 @@
 lockfileVersion: 5.3
 
 specifiers:
+  axios: ^0.21.1
   chokidar: ^3.5.2
   npm-run-all: ^4.1.5
+  qs: ^6.10.1
   solid-app-router: ^0.1.4
   solid-js: ^1.0.7
   vite: ^2.4.4
@@ -15,8 +17,10 @@ dependencies:
   solid-js: 1.0.7
 
 devDependencies:
+  axios: 0.21.1
   chokidar: 3.5.2
   npm-run-all: 4.1.5
+  qs: 6.10.1
   solid-app-router: 0.1.4_solid-js@1.0.7
   vite: 2.4.4
   vite-plugin-solid: 2.0.1
@@ -393,6 +397,14 @@ packages:
       picomatch: 2.3.0
     dev: true
 
+  /axios/0.21.1:
+    resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
+    dependencies:
+      follow-redirects: 1.14.1
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
   /babel-plugin-jsx-dom-expressions/0.29.9_@babel+core@7.14.8:
     resolution: {integrity: sha512-NuYjihC9A93gxhx9zefbdjD8doMPPOKuKzj+PSg5QBne25n/ikcRpcQy3bcbDBFw4OgJFtUfQQ1F9KAuy+ezcQ==}
     dependencies:
@@ -638,6 +650,16 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       to-regex-range: 5.0.1
+    dev: true
+
+  /follow-redirects/1.14.1:
+    resolution: {integrity: sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     dev: true
 
   /fsevents/2.3.2:
@@ -1031,6 +1053,13 @@ packages:
     resolution: {integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+    dev: true
+
+  /qs/6.10.1:
+    resolution: {integrity: sha512-M528Hph6wsSVOBiYUnGf+K/7w0hNshs/duGsNXPUCLH5XAqjEtiPGwNONLV0tBH8NoGb0mvD5JubnUTrujKDTg==}
+    engines: {node: '>=0.6'}
+    dependencies:
+      side-channel: 1.0.4
     dev: true
 
   /queue-microtask/1.2.3:
