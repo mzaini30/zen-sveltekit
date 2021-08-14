@@ -5,12 +5,13 @@ specifiers:
   chokidar: ^3.5.2
   npm-run-all: ^4.1.5
   qs: ^6.10.1
+  randomatic: ^3.1.1
   solid-app-router: ^0.1.4
   solid-js: ^1.0.7
   vite: ^2.4.4
   vite-plugin-solid: ^2.0.1
   vite-plugin-windicss: ^1.2.7
-  vue-route-generator-jsx: ^0.0.3
+  vue-route-generator-jsx: 0.0.4
   windicss: ^3.1.7
 
 dependencies:
@@ -21,11 +22,12 @@ devDependencies:
   chokidar: 3.5.2
   npm-run-all: 4.1.5
   qs: 6.10.1
+  randomatic: 3.1.1
   solid-app-router: 0.1.4_solid-js@1.0.7
   vite: 2.4.4
   vite-plugin-solid: 2.0.1
   vite-plugin-windicss: 1.2.7_vite@2.4.4
-  vue-route-generator-jsx: 0.0.3
+  vue-route-generator-jsx: 0.0.4
   windicss: 3.1.7
 
 packages:
@@ -820,6 +822,11 @@ packages:
       has-tostringtag: 1.0.0
     dev: true
 
+  /is-number/4.0.0:
+    resolution: {integrity: sha512-rSklcAIlf1OmFdyAqbnWTLVelsQ58uvZ66S/ZyawjWqIviTWCjg2PzVGw8WUA+nNuPTqb4wgA+NszrJ+08LlgQ==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /is-number/7.0.0:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
@@ -882,6 +889,11 @@ packages:
       minimist: 1.2.5
     dev: true
 
+  /kind-of/6.0.3:
+    resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /load-json-file/4.0.0:
     resolution: {integrity: sha1-L19Fq5HjMhYjT9U62rZo607AmTs=}
     engines: {node: '>=4'}
@@ -896,6 +908,10 @@ packages:
     resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
     dependencies:
       sourcemap-codec: 1.4.8
+    dev: true
+
+  /math-random/1.0.4:
+    resolution: {integrity: sha512-rUxjysqif/BZQH2yhd5Aaq7vXMSx9NdEsQcyA07uEzIvxgI7zIr33gGsh+RU0/XjmQpCW7RsVof1vlkvQVCK5A==}
     dev: true
 
   /memorystream/0.3.1:
@@ -1064,6 +1080,15 @@ packages:
 
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+    dev: true
+
+  /randomatic/3.1.1:
+    resolution: {integrity: sha512-TuDE5KxZ0J461RVjrJZCJc+J+zCkTb1MbH9AQUq68sMhOMcy9jLcb3BrZKgp9q9Ncltdg4QVqWrH02W2EFFVYw==}
+    engines: {node: '>= 0.10.0'}
+    dependencies:
+      is-number: 4.0.0
+      kind-of: 6.0.3
+      math-random: 1.0.4
     dev: true
 
   /read-pkg/3.0.0:
@@ -1316,8 +1341,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vue-route-generator-jsx/0.0.3:
-    resolution: {integrity: sha512-jWqciDWjNbMNBs7NFK1z6KWh5GXDKoqS2og9w9sRuWtDGoODbDwKMoqvPuvJsf0c16vfwxkUW71EZIdBShZ74A==}
+  /vue-route-generator-jsx/0.0.4:
+    resolution: {integrity: sha512-jpqOdmjon9VsvOBWZQueVubnH4Hh25L6v0iuJBd0Vx+teKInUnRxymD7BGqIj8ZFZlJXpQNFKtVUF1Huxjgpxw==}
     dependencies:
       fast-glob: 3.2.7
       prettier: 2.2.1

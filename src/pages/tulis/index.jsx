@@ -5,16 +5,33 @@ import {sql, teks} from './api'
 import {createSignal} from 'solid-js'
 import {post} from 'axios'
 import {stringify} from 'qs'
+import randomatic from 'randomatic'
 
 export default function(){
 	const [teksnya, setTeksnya] = createSignal('')
+	let idnya
 
 	async function simpan(){
-		const sudahSimpan = await post(sql, stringify({
+		idnya = randomatic('a0', 4)
+		const {data: banyak} = await post(sql, stringify({
 			id: teks,
-			kunci: 'tambah',
-			teks: teksnya()
+			kunci: 'cek',
+			idnya
 		}))
+		if (banyak[0].banyak > 0){
+			simpan()
+		} else {
+			const sudahSimpan = await post(sql, stringify({
+				id: teks,
+				kunci: 'tambah',
+				teks: teksnya(),
+				idnya
+			}))
+			if (sudahSimpan){
+				
+			}
+		}
+
 	}
 
 	return <form class={style.jarak} action="">
