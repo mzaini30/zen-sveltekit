@@ -1,12 +1,12 @@
 .lkavem {
 	form {
-		@apply p-3 bg-blue-300 h-screen;
+		@apply p-3 bg-blue-300 h-screen
 	}
 	.tombol {
 		@apply bg-orange-300 px-5 py-2 rounded user-select-none cursor-pointer focus:(bg-white text-orange-500);
-		box-shadow: 5px 5px 0 0 black;
+		box-shadow: 5px 5px 0 0 black
 	}
 	textarea {
-		@apply border w-full p-3 border-blue-800 rounded-xl border-2;
+		@apply border w-full p-3 border-blue-800 rounded-xl border-2
 	}
 }

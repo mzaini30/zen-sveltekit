@@ -1,5 +1,17 @@
 .kameiamsalkSDkafa {
-	h1 {
-		@apply bg-green-500 p-8 text-white text-5xl;
+	@apply min-h-screen text-white;
+	background-color: #4158D0;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+	a {
+		@apply no-underline;
+	}
+	.aplikasi {
+		@apply inline-block p-7;
+	}
+	.aplikasi .icon svg {
+		@apply text-white w-10 h-auto;
+	}
+	.aplikasi p {
+		@apply text-xl text-white;
 	}
 }

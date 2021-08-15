@@ -1,5 +1,3 @@
-document.title = 'Tulis'
-
 import './index.scss'
 import {sql, teks} from './api'
 import {createSignal} from 'solid-js'
@@ -9,6 +7,8 @@ import {stringify} from 'qs'
 import randomatic from 'randomatic'
 
 export default function(){
+	document.title = 'Tulis'
+
 	const [teksnya, setTeksnya] = createSignal('')
 	let idnya
 	const navigate = useNavigate()

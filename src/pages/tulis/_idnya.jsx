@@ -1,5 +1,3 @@
-document.title = 'Tampil'
-
 import {useParams, Link} from 'solid-app-router'
 import './_idnya.scss'
 import {post} from 'axios'
@@ -8,6 +6,8 @@ import {sql, teks} from './api'
 import {createSignal, onMount} from 'solid-js'
 
 export default function(){
+	document.title = 'Tampil'
+
 	const {idnya} = useParams()
 	const [hasil, setHasil] = createSignal('')
 
