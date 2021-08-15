@@ -1,7 +1,7 @@
 document.title = 'Tampil'
 
 import {useParams, Link} from 'solid-app-router'
-import style from './_idnya.module.css'
+import './_idnya.scss'
 import {post} from 'axios'
 import {stringify} from 'qs'
 import {sql, teks} from './api'
@@ -21,8 +21,8 @@ export default function(){
 	}
 	onMount(() => ambilData())
 
-	return <div className={style.jarak}>
-		<Link className={style.tombol} href='/tulis'>Tulis baru</Link>
-		<p className={style.hasilnya}>{hasil().trim()}</p> 
+	return <div className='aievmakdjfai'>
+		<Link className='tombol' href='/tulis'>Tulis baru</Link>
+		<p>{hasil().trim()}</p> 
 	</div>
 }

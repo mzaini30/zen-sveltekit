@@ -1,6 +1,6 @@
 document.title = 'Tulis'
 
-import style from './index.module.css'
+import './index.scss'
 import {sql, teks} from './api'
 import {createSignal} from 'solid-js'
 import {useNavigate} from 'solid-app-router'
@@ -37,8 +37,10 @@ export default function(){
 
 	}
 
-	return <form class={style.jarak} action="" onSubmit={simpan}>
-		<textarea placeholder='Masukkan teks yang mau disimpan' name="" class={style.input} id="" cols="30" onInput={x => setTeksnya(x.target.value)} rows="10"></textarea>
-		<input type="submit" value='Simpan' class={style.tombol}/>
-	</form>
+	return <div className="lkavem">
+		<form action="" onSubmit={simpan}>
+			<textarea placeholder='Masukkan teks yang mau disimpan' name="" id="" cols="30" onInput={x => setTeksnya(x.target.value)} rows="10"></textarea>
+			<input type="submit" value='Simpan' class='tombol'/>
+		</form>		
+	</div>
 }

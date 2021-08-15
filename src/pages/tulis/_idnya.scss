@@ -1,0 +1,9 @@
+.aievmakdjfai {
+	@apply p-3;
+	.tombol {
+		@apply mb-3 inline-block no-underline text-white bg-green-500 rounded bordered py-2 px-5 select-none;
+	}
+	p {
+		@apply whitespace-pre-wrap;
+	}
+}

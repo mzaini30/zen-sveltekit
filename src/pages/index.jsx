@@ -1,7 +1,9 @@
 document.title = 'Zen'
 
-import style from './index.module.css'
+import './index.scss'
 
 export default function(){
-    return <h1 class={style.header}>Hello World</h1>
+    return <div className="kameiamsalkSDkafa">
+        <h1>Hello World</h1>
+    </div>
 }
