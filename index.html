@@ -11,12 +11,30 @@
 <body>
 	<h1>Jurnal</h1>
 	<div>
-		<a href="baru.html" class="tombol">baru</a>
+		<a v-for='x in menu' :href="x.link" class="tombol">{{x.judul}}</a>
+	</div>
+	<div class="wadah-card">
+		<a :href="'baca.html?id=' + x.id" class="card" v-for='x in teks'>
+			<h2>{{x.judul}}</h2>
+			<p>{{x.cuplikan}}</p>
+		</a>
 	</div>
 
 	<script src="lib/petite-vue.js"></script>	
 	<script>
-		PetiteVue.createApp().mount()
+		PetiteVue.createApp({
+			teks: [
+				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
+				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
+				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
+				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
+				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
+			],
+			menu: [
+				{judul: 'baru', link: 'baru.html'},
+				// {judul: 'cari', link: 'cari.html'},
+			]
+		}).mount()
 	</script>
 </body>
 </html>

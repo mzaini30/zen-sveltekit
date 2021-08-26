@@ -8,6 +8,7 @@ h1 {
   font-style: italic;
 }
 .tombol {
+  display: inline-block;
   color: black;
   text-decoration: none;
   background: white;
@@ -15,4 +16,22 @@ h1 {
   padding: 5px 10px;
   margin: 0 5px 5px 0;
   border-radius: 5px;
+}
+.wadah-card {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.card {
+  background: white;
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+}
+@media (max-width: 768px){
+  .wadah-card {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
