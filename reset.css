@@ -5,3 +5,6 @@
   margin: 0;
   padding: 0;
 }
+*:focus {
+  user-select: none;
+}
