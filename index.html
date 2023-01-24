@@ -1,40 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jurnal</title>
-	<link rel="icon" href="aset/book.png">
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="index.css">
-</head>
-<body>
-	<h1>Jurnal</h1>
-	<div>
-		<a v-for='x in menu' :href="x.link" class="tombol">{{x.judul}}</a>
-	</div>
-	<div class="wadah-card">
-		<a :href="'baca.html?id=' + x.id" class="card" v-for='x in teks'>
-			<h2>{{x.judul}}</h2>
-			<p>{{x.cuplikan}}</p>
-		</a>
-	</div>
-
-	<script src="lib/petite-vue.js"></script>	
-	<script>
-		PetiteVue.createApp({
-			teks: [
-				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
-				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
-				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
-				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
-				{id: 12, judul: 'Lorem ipsum', cuplikan: 'lorem ipsum dolor sit amet... apa lagi lah. Pokoknya itu ya...'},
-			],
-			menu: [
-				{judul: 'baru', link: 'baru.html'},
-				// {judul: 'cari', link: 'cari.html'},
-			]
-		}).mount()
-	</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZEN - Website & Android Developer</title>
+  </head>
+  <body>
+    <script>
+      location.href = "https://wa.me/6281545143654";
+    </script>
+  </body>
 </html>
